@@ -28,7 +28,7 @@ resource "aws_security_group" "tf_security_group" {
         from_port   = 3000
         to_port     = 3000
         protocol    = "tcp"
-        cidr_blocks = ["150.129.102.179/32"]
+        cidr_blocks = ["${var.my_ip}/32"]
     }
     egress  {
             from_port   = 0

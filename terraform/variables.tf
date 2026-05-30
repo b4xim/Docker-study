@@ -18,3 +18,8 @@ variable "vpc_id" {
     type        = string
     default     = "vpc-0b3300f0d88a79ba2"
 }
+variable "my_ip" {
+  description = "Your public IP address to allow access to the EC2 instance."
+  type        = string
+  default     = "150.129.102.179"
+}
